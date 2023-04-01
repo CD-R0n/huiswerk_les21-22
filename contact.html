@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ron Sedee">
+    <meta name="original-source" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>CD-RON</title>
+    <style>
+        footer {
+            min-height: 200px;
+        }
+        .brand {
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand brand" href="index.html">CD-RON</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_collapse" aria-controls="navbar_collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar_collapse">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="overmij.html">Over mij</a>
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-sm">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Contact:</legend>
+                <div class="mb-3">
+                    <label for="naam" class="form-label">Uw naam:</label>
+                    <input type="text" class="form-control" id="naam" value="naam" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email adres:</label>
+                    <input type="email" class="form-control" id="email" value="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="bericht" class="form-label">Uw bericht:</label>
+                    <textarea class="form-control" id="bericht" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-secondary">Verzend</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="overmij.html" class="nav-link px-2 text-muted">Over mij</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2023 CD-RON</p>
+        </footer>
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
